@@ -1,0 +1,132 @@
+.footer1{
+    background-color: rgb(4,44,72);
+    height: 140px;
+    padding-left: 3.8%;
+}
+.footer1 > h3{
+    padding-top: 15px;
+    color: white;
+}
+.footer1>div>div{
+    color: white;
+}
+.footer-inner1{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.footer-inner2{
+    display: flex;
+    gap: 15px;
+}
+.footer1>div>div>div>input{
+    font-size: 16px;
+    padding-left: 12px;
+    height: 38px;
+    width: 200px;
+    border-radius: 5px;
+}
+.footer1>div>div>div>button{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    height: 44px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(4,44,72);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.footer1>div>div>div>button:hover{
+    background-color: white;
+    color: rgb(4,44,72);
+}
+.footer2{
+    background-color: rgb(1,57,83);
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 145px;
+    padding: 3.8%;
+}
+.inner-div4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.innerdiv3{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inner-text{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;   
+}
+.title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.side-div-title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.side-inner-text{
+    color: white;
+    font-weight: 400;
+    font-size: 15px; 
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.button{
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 20px;
+    height: 48px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(4,44,72);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.button:hover{
+    background-color: white;
+    color: rgb(4,44,72);
+}
+.icon{
+    color: white;
+}
+.hr{
+    margin-top: -10px;
+    margin-left: 3.8%;
+    margin-right: 3.8%;
+    border: 1px solid rgb(4,44,72);
+}
+.last-text{
+    height:50px;
+    margin-left: 3.8%;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;   
+    margin-top: 15px;
+}
+.anc{
+    color: white;
+    text-decoration: none;
+}

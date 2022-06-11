@@ -1,0 +1,87 @@
+.home-img1{
+    width: 100%;
+}
+.home-img-div{
+    background-color: rgb(245,245,245);
+    justify-content: center;
+    display: flex;
+    height: 290px;
+    width: 210px;
+}
+.home-flex-div{
+    display: flex;
+    gap: 20px;
+}
+.home-img-div > img{
+    background-color: rgb(245,245,245);
+}
+.home-title{
+    letter-spacing: 2px;
+    margin: 50px 0 25px 0;
+    font-size:x-large;
+    font-weight: bold;
+}
+.home-mini-title{
+    margin: 20px 0 0 0;
+    font-weight: 550;
+}
+.home1{
+    display:flex;
+    margin: 70px 0 0 30px;
+    text-align: center;
+}
+.home1-title{
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.home1-button{
+    cursor: pointer;
+    margin: 30px 170px 0 170px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    height:50px;
+    width:230px;
+    border:2px solid black;
+    background-color: rgb(254,230,121);
+}
+.home1-button:hover{
+    background-color: black;
+    color:white
+}
+.home2{
+    display: flex;
+    gap:10px;
+    margin:30px 0 0 150px;
+}
+.home3{
+    margin-top: 60px;
+    display: flex;
+}
+.home2-button{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    height:50px;
+    width:230px;
+    border:2px solid black;
+    background-color: white;
+    margin: 20px 100px 0 100px;
+}
+.home4{
+    margin-left: 50px;
+    margin-top: 60px;
+    display: flex;
+}
+.home8{
+    margin-left: 50px;
+    display: flex;
+    gap: 13px;
+}
+.home8 > img{
+    width: 450px;
+}
+
