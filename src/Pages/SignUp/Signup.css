@@ -1,0 +1,52 @@
+.signup-main{
+    text-align: center;
+}
+.signup-container{
+    margin: auto;
+    height: 560px;
+    width: 370px;
+    border: 1px solid black;
+}
+.signup-container > h2{
+    margin: 0 0 0 -180px;
+}
+.sign-input-box{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 320px;
+    height: 23px;
+    border: 2px solid rgb(221,221,221);
+    border-radius: 4px;
+}
+.sign-button{
+    height: 33px;
+    width:328px
+}
+.sign-label{
+    margin: 100px 0 0 -255px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.sign-label2{
+    margin: 100px 0 0 -285px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.sign-label3{
+    margin: 100px 0 0 -205px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.sign-label4{
+    margin: 100px 0 0 -265px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.sign-button{
+    background-color: rgb(1,57,83);
+    border: 1px solid rgb(1,57,83);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+

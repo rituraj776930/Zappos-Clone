@@ -1,0 +1,26 @@
+.filter{
+    margin-left: 30px;
+    height: 700px;
+    width: 272px;
+    /* border: 1px solid black; */
+}
+.products{
+    display: flex;
+
+}
+.products-main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+}
+.products-select-tag{
+    background-color: rgb(223, 205, 205);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    width:150px;
+    height:35px;
+    /* border:2px solid blue; */
+    border-radius:10px
+}

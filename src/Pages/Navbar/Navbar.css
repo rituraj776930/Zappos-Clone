@@ -126,6 +126,7 @@
     display: inline-flex;
 }
 .navbar4{
+    justify-content: space-between;
     display: flex;
     height: 46px;
 }
@@ -183,4 +184,12 @@
     transition: 1s ease-out;
     transform: scale(1.07);
     background-color: rgb(151, 232, 114);
+}
+.signin{
+    margin-right: 45px;
+    margin-top: 13px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 570;
+    color: rgb(1,57,83);
 }

@@ -3,8 +3,12 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import './Navbar.css'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Navbar() {
+    const cartdata = useSelector((state)=>state.cartdata)
+    const navigate = useNavigate()
     const [flag1,setflag1] = useState(false)
     const [flag2,setflag2] = useState(false)
     const [flag3,setflag3] = useState(false)
@@ -60,7 +64,7 @@ function Navbar() {
                 <div><input type="text" name="" id="" placeholder='🔍  Search for shoes,clothes,etc' /><button>SEARCH</button></div>
             </div>
             <div>
-                <button className='cart-button'><ShoppingCartOutlinedIcon/> ITEM IN CART</button>
+                <button onClick={()=>navigate("/cart")} className='cart-button'><ShoppingCartOutlinedIcon/> ITEM IN CART</button>
             </div>
         </div>
 
@@ -620,6 +624,8 @@ function Navbar() {
                 </div>
             </div>
         </div>
+
+        <div className='signin'>SignIn/Register</div>
             
         </div>
 

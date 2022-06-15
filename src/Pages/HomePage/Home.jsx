@@ -1,10 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 import './Home.css'
 
 function Home() {
+    const navigate = useNavigate()
   return (
     <div>
-        <div><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.02/SO-Skinny-Banner-2880x650_2._CB1198675309_.png" alt="" /></div>
+        <Navbar/>
+        <div onClick={()=>navigate("/products")}><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.02/SO-Skinny-Banner-2880x650_2._CB1198675309_.png" alt="" /></div>
         <div><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.06/COOP-SO-UGG-HERO-2880x1400.jpg" alt="" /></div>
         <div style={{marginLeft:"50px"}}>
             <div className='home-title'>Shop Popular Categories</div>
@@ -156,6 +161,8 @@ function Home() {
             <img src="https://m.media-amazon.com/images/G/01/2022/homepage2.08/Blank_500_x_500-491.jpg" alt="" />
             <img src="https://m.media-amazon.com/images/G/01/zappos/landing/opus/2020/homepage/july/GGPromo.png" alt="" />
         </div>
+
+        <Footer/>
     </div>
   )
 }
