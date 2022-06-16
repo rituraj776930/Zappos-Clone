@@ -5,10 +5,15 @@ import './Navbar.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { removeauth } from '../../Redux/action';
 
 function Navbar() {
+    const auth = useSelector((state)=>state.auth)
+    const user_data = useSelector((state)=>state.user_data)
     const cartdata = useSelector((state)=>state.cartdata)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [flag1,setflag1] = useState(false)
     const [flag2,setflag2] = useState(false)
     const [flag3,setflag3] = useState(false)
@@ -44,11 +49,21 @@ function Navbar() {
             setflag1(false) ; setflag2(false) ; setflag3(false) ; setflag4(false) ; setflag5(false) ; setflag6(false);setflag7(false);setflag8(flag)
         }
     }
+
+    const handleLogout = ()=>{
+        console.log("false")
+        dispatch(removeauth())
+        alert("Successfully logged out")
+        navigate("/")
+    }
   return (
     <div>
         <div className='navbar1'>
-            <div className='img1'><img src="https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg" alt="" /></div>
-            <div className='img2'><img src="https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg" alt="" /></div>
+            <div className='navbar12'>
+                <div onClick={()=>navigate("/")} className='img1'><img src="https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg" alt="" /></div>
+                <div className='img2'><img src="https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg" alt="" /></div>
+            </div>
+            <h3 onClick={()=>handleLogout()} className='logout'>Logout</h3>
         </div>
 
         <div className='navbar2'>
@@ -60,11 +75,11 @@ function Navbar() {
 
         <div className='navbar3'>
             <div className='navbar3-inner1'>
-                <div><img style={{height:"60px",width:"120px",marginLeft:"30px",marginTop:"20px"}} src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" alt="" /></div>
+                <div onClick={()=>navigate("/")}><img style={{height:"60px",width:"120px",marginLeft:"30px",marginTop:"20px",cursor:"pointer"}} src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" alt="" /></div>
                 <div><input type="text" name="" id="" placeholder='🔍  Search for shoes,clothes,etc' /><button>SEARCH</button></div>
             </div>
             <div>
-                <button onClick={()=>navigate("/cart")} className='cart-button'><ShoppingCartOutlinedIcon/> ITEM IN CART</button>
+                <button onClick={()=>navigate("/cart")} className='cart-button'><ShoppingCartOutlinedIcon/>{cartdata.length} ITEM IN CART</button>
             </div>
         </div>
 
@@ -625,7 +640,7 @@ function Navbar() {
             </div>
         </div>
 
-        <div className='signin'>SignIn/Register</div>
+        <div onClick={()=>navigate("/signup")} className='signin'>{auth ? `Hello ${user_data.name}` : "SignIn/Register"}</div>
             
         </div>
 

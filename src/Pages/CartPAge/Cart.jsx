@@ -2,13 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
-import { addquantity, reducequantity } from '../../Redux/action'
+import { useNavigate } from 'react-router-dom'
+import { addquantity, reducequantity, removeCart } from '../../Redux/action'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Cart.css'
 
 
 function Cart() {
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const cartdata = useSelector((state)=>state.cartdata)
   const total = useSelector((state)=>state.total_price)
@@ -17,6 +19,10 @@ function Cart() {
   }
   const handleClick2 = (item)=>{
     dispatch(addquantity(item))
+  }
+  const handleRemoval = (item)=>{
+    console.log("in function")
+    dispatch(removeCart(item))
   }
   return (
     <div>
@@ -27,7 +33,8 @@ function Cart() {
           <div style={{margin:"8px 30px 0 0",color:"white"}}>Price/Quantity</div>
         </div>
        <div style={{display:"flex",gap:"10px"}}>
-        <div className='product-cart-div'>
+         <div>{cartdata.length ? 
+        <div className='product-cart-div'> 
           {cartdata.map((item)=>{
             return(
               <div key={item.id} style={{display:"flex",justifyContent:"space-between",marginTop:"20px"}}>
@@ -38,6 +45,7 @@ function Cart() {
                     <div>{item.name}</div>
                     <div>Color:{item.color}</div>
                     <div>Size:{item.size}</div>
+                    <div onClick={()=>handleRemoval(item)} style={{marginTop:"40px",cursor:"pointer",fontSize:"17px",fontWeight:"bolder",font:"sans-sarif"}}>Remove</div>
                   </div>
                 </div>
                 
@@ -51,10 +59,11 @@ function Cart() {
               </div>
             )
           })}
+        </div> : <div className='product-cart-div'><h2>Please Add some items in cart</h2></div>}
         </div>
          <div> 
           <div style={{height:"160px",width:"500px",marginTop:"-35px",backgroundColor:"rgb(245,245,245"}}>
-            <div><button className='checkout-button'>PROCEED TO CHECKOUT</button></div>
+            <div><button onClick={()=>navigate("/checkout")} className='checkout-button'>PROCEED TO CHECKOUT</button></div>
             <div style={{margin:"10px 0 0 25px"}}>Have a Promotional Code? Proceed to checkout to redeem it.</div>
             <h3 style={{marginLeft:"25px"}}>Cart Summary ({cartdata.length} Items)</h3>
             <div style={{display:"flex",justifyContent:"space-between",margin:"-30px 25px 0 25px"}}>

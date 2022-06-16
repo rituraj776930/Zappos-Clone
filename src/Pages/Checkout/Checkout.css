@@ -1,0 +1,173 @@
+.discount{
+    margin-bottom: 2px;
+    text-align: left;
+    font-size: 16px;
+}
+.discount~p{
+    margin-top: 2px;
+    
+}
+.continue{
+    background-color: red;
+}
+.subTotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.visa,.paypal{
+    margin-bottom: 10px;
+    background-color: rgb(228, 228, 228);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.orderSummary p{
+    font-size: 14px;
+}
+.longbar{
+    width: 100%;
+    background-color:rgb(120, 120, 120);
+    height: 1px;
+    margin: 10px auto;
+}
+.checkout{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: .990000;
+    border: 0px solid;
+    margin: 10px auto;
+}
+.orderSummary{
+    width: 25%;
+    height:800px;
+}
+.container{
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.payment{
+    width: 65%;
+}
+.reward1{
+    display: none;
+}
+
+
+.popup{
+background-image: linear-gradient(to right, rgb(98, 127, 225) , rgb(144, 244, 167));
+width: 420px;
+padding: 30px 40px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+border-radius: 15px;
+font-family: "Poppins",sans-serif;
+display: none; 
+text-align: center;
+}
+.close{
+display: block;
+margin:  0 0 30px auto;
+background-color: transparent;
+font-size: 30px;
+color: ffffff;
+background: royalblue;
+border-radius: 100%;
+width: 40px;
+height: 40px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.popup>h2{
+margin-top: -20px;
+}
+.popup>p{
+font-size: 14px;
+text-align: center;
+margin: 20px 0;
+line-height: 25px;
+}
+.popupLogin{
+display: block;
+width: 150px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+background-color: .0f72e5;
+border-radius: 20px;
+color: ffffff;
+text-decoration: none;
+padding: 8px 0;
+}
+.discountInput{
+height: 30px;
+border-radius: 20px;
+width: 200px;
+}
+
+input{
+width: 99%;
+height: 40px;
+margin-bottom: 20px;
+}
+
+.shipping, .cardDetails{
+width: 100%;
+margin: 10px auto;
+border: 1px solid rgb(210, 210, 210);
+padding: 20px;
+}
+.cardDetails{
+display: none;
+}
+.flex{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.flex>input{
+width: 150px;
+
+}
+.button{
+    margin-left: 150px;
+   height: 22px;
+}
+.button>input{
+width: 200px;
+color: white;
+height: 40px;
+background-color:.990000;
+cursor: pointer;
+}
+.reward{
+    height: 150px;
+    width:220px
+}
+.form1{
+display: none;
+}
+.form5{
+    display:block;
+}
+.form2{
+    width: 100%;
+margin: 10px auto;
+border: 1px solid rgb(210, 210, 210);
+padding: 20px;
+display:none
+}
+.form4{
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 20px;
+    display:block
+}

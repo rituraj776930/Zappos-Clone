@@ -7,6 +7,9 @@ import Signup from './Pages/SignUp/Signup';
 import Cart from './Pages/CartPAge/Cart';
 import Products from './Pages/Products/Products';
 import AllRoutes from './Pages/AllRoutes';
+import Checkout from './Pages/Checkout/Checkout';
+import Otp from './Pages/OtpPage/Otp';
+import Thankyou from './Pages/ThankYou/Thankyou';
 
 
 
@@ -14,6 +17,8 @@ function App() {
   return (
     <div className="App">
       <AllRoutes/>
+      {/* <Otp/> */}
+      {/* <Thankyou/> */}
     </div>
   );
 }
