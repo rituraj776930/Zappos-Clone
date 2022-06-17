@@ -10,32 +10,32 @@ function Home() {
     <div>
         <Navbar/>
         <div onClick={()=>navigate("/products")}><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.02/SO-Skinny-Banner-2880x650_2._CB1198675309_.png" alt="" /></div>
-        <div><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.06/COOP-SO-UGG-HERO-2880x1400.jpg" alt="" /></div>
+        <div onClick={()=>navigate("/products")}><img className='home-img1' src="https://m.media-amazon.com/images/G/01/2022/homepage6.06/COOP-SO-UGG-HERO-2880x1400.jpg" alt="" /></div>
         <div style={{marginLeft:"50px"}}>
             <div className='home-title'>Shop Popular Categories</div>
             <div className='home-flex-div'>
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px"}} src="https://m.media-amazon.com/images/I/71U7e7IRHSL._AC_SX255_.jpg" alt="" /></div>
-                    <div className='home-mini-title'>Sneakers & Athletic Shoes</div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px"}} src="https://m.media-amazon.com/images/I/71U7e7IRHSL._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-mini-title'>Sneakers & Athletic Shoes</div>
                 </div >
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px",}} src="https://m.media-amazon.com/images/I/71H1zKI3q5L._AC_SX255_.jpg" alt="" /></div>
-                    <div className='home-mini-title'>Sandals</div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px",}} src="https://m.media-amazon.com/images/I/71H1zKI3q5L._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-mini-title'>Sandals</div>
                 </div>
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{height:"280px",width:"120px"}} src="https://m.media-amazon.com/images/I/71gw6D5NE+L._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{height:"280px",width:"120px"}} src="https://m.media-amazon.com/images/I/71gw6D5NE+L._AC_SX255_.jpg" alt="" /></div>
                     <div className='home-mini-title'>Dresses</div>
                 </div>
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px",}} src="https://m.media-amazon.com/images/I/71NI4oqYMuL._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{marginTop:"80px",height:"90px",width:"195px",}} src="https://m.media-amazon.com/images/I/71NI4oqYMuL._AC_SX255_.jpg" alt="" /></div>
                     <div className='home-mini-title'>Loafers</div>
                 </div>
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{height:"280px",width:"90px"}} src="https://m.media-amazon.com/images/I/51lEd4lr0KL._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{height:"280px",width:"90px"}} src="https://m.media-amazon.com/images/I/51lEd4lr0KL._AC_SX255_.jpg" alt="" /></div>
                     <div className='home-mini-title'>Swimwear</div>
                 </div>
                 <div style={{textAlign:"center"}}>
-                    <div className='home-img-div'><img style={{marginTop:"80px",height:"140px",width:"195px",}} src="https://m.media-amazon.com/images/I/71F2QuFXVIL._AC_SX255_.jpg" alt="" /></div>
+                    <div onClick={()=>navigate("/products")} className='home-img-div'><img style={{marginTop:"80px",height:"140px",width:"195px",}} src="https://m.media-amazon.com/images/I/71F2QuFXVIL._AC_SX255_.jpg" alt="" /></div>
                     <div className='home-mini-title'>Clogs</div>
                 </div>
             </div>
